@@ -11,24 +11,28 @@
   <title>Frontend Mentor | Profile card component</title>  
 </head>
 <body>
-  <main>
-    <section>
-      <article>
-        <img src="./src/images/bg-pattern-card.svg" alt="background-card-image">      
+  <main class="main-container">
+    <!-- profile card -->
+    <section class="pcard-container">
+      <!-- top background of the card -->
+      <article class="pcard__bgn-container">
+        <img class="pcard__bgn-img"src="./src/images/bg-pattern-card.svg" alt="background-card-image">      
       </article>
-      <article>
-        <img src="./src/images/image-victor.jpg" alt="profile-image">
-      </article>  
-      <article>
-        <h1>Victor Crest <span>26</span></h1>
-        <p>London</p>
-        <div>
-          <div>80K</div>
-          <div>Followers</div>
-          <div>803K</div>
-          <div>Likes</div>
-          <div>1.4K</div>
-          <div>Photos</div>
+      <!-- user profile image -->
+      <article class="pcard__user-image-container">
+        <img class="pcard__image" src="./src/images/image-victor.jpg" alt="user-profile-image">
+      </article>
+      <!-- bottom content of the card -->
+      <article class="pcard__content-container" >
+        <h1 class="pcard__content-name">Victor Crest <span id="user-age">26</span></h1>
+        <p class="pcard__content-location">London</p>
+        <div class="pcard__content-stats-container">
+          <div class="pcard__content-amount">80K</div>
+          <div class="pcard__content-stats">Followers</div>
+          <div class="pcard__content-amount">803K</div>
+          <div class="pcard__content-stats">Likes</div>
+          <div class="pcard__content-amount">1.4K</div>
+          <div class="pcard__content-stats">Photos</div>
         </div> 
       </article>      
     </section>
