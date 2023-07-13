@@ -1,4 +1,22 @@
+:root {
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydarkdesaturated-blue: hsl(229, 23%, 23%);
+    --Darkgrayish-blue: hsl(227, 10%, 46%);
+    --Dark-gray: hsl(0, 0%, 59%);
+}
 
+*,
+*:before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
 
 
 
