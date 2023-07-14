@@ -38,6 +38,7 @@ body {
     background: #fff;
     border-radius: 15.5px;
     overflow: hidden;
+    position: relative
 }
 
 .pcard__bgn-container {
@@ -49,7 +50,7 @@ body {
     height: 8.75rem;
 }
 
-.pcard__user-image-container {
+.pcard__user-image {
     width: 6.625rem;
     height: 6.625rem;
     position: relative;
@@ -62,13 +63,6 @@ body {
     background-repeat: no-repeat;
 }
 
-.pcard__user-image {
-    background-image: url('./images/image-victor.jpg');
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;  
-}
 
 .pcard__content-container {
     height: 238px;
