@@ -11,32 +11,39 @@
   <title>Frontend Mentor | Profile card component</title>  
 </head>
 <body>
-  <main>
-    <section>
-      <article>
-        <img src="./src/images/bg-pattern-card.svg" alt="background-card-image">      
+  <main class="main-container">
+    <!-- profile card -->
+    <section class="pcard-container">
+      <!-- top background of the card -->
+      <article class="pcard__bgn-container">
       </article>
-      <article>
-        <img src="./src/images/image-victor.jpg" alt="profile-image">
-      </article>  
-      <article>
-        <h1>Victor Crest <span>26</span></h1>
-        <p>London</p>
-        <div>
-          <div>80K</div>
-          <div>Followers</div>
-          <div>803K</div>
-          <div>Likes</div>
-          <div>1.4K</div>
-          <div>Photos</div>
-        </div> 
+      <!-- user profile image -->
+      <img class="pcard__user-image" src="./src/images/image-victor.jpg" alt="profile-photo">   
+      <!-- middle content of the card -->
+      <article class="pcard__mcontent-container" >
+        <h1 class="pcard__content-name">Victor Crest <span id="age">26</span></h1>
+        <p class="pcard__content-location">London</p>
+      </article>
+      <!-- bottom content of the card -->
+      <article class="pcard__content-stats-container">
+        <div class="pcard__content-stats-flex">
+          <div class="pcard__flex-amount">80K</div>
+          <div class="pcard__flex-stats">Followers</div>
+        </div>
+        <div class="pcard__content-stats-flex">
+          <div class="pcard__flex-amount">803K</div>
+          <div class="pcard__flex-stats">Likes</div>
+        </div>          
+        <div class="pcard__content-stats-flex">
+         <div class="pcard__flex-amount">1.4K</div>
+         <div class="pcard__flex-stats">Photos</div>
+        </div>         
       </article>      
     </section>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Agustín R. Firpo</a>.
     </div>
-  </main>
-  
+  </main>  
 </body>
 </html>

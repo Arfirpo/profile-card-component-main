@@ -2,7 +2,8 @@
     --Darkcyan: hsl(185, 75%, 39%);
     --Verydarkdesaturated-blue: hsl(229, 23%, 23%);
     --Darkgrayish-blue: hsl(227, 10%, 46%);
-    --Dark-gray: hsl(0, 0%, 59%);
+    --Dark-gray: hsl(0, 0%, 49%);
+    --Dark-gray-b: rgba(153, 176, 178, 0.294);
 }
 
 *,
@@ -16,50 +17,106 @@
 body {
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
+    min-width: 23.4375rem;
+    min-height: 41.6875rem;
+    background: var(--Darkcyan);
+    background-image: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 65vw bottom 20vh, left 45vw top 50vh;
 }
 
+.main-container {
+    width: 23.4375rem;
+    height: 41.6875rem;
+    margin: 0 auto;
+    padding: 9.125rem 1.375rem;
+}
 
+.pcard-container {
+    width: 20.625rem;
+    height: 23.4375rem;
+    margin: auto 0;
+    background: #fff;
+    border-radius: 15.5px;
+    overflow: hidden;
+    position: relative;
+}
 
+.pcard__bgn-container {
+    height: 8.75rem;
+    background-image: url('./images/bg-pattern-card.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 8.75rem;
+}
 
+.pcard__user-image {
+    width: 109px;
+    height: 109px;
+    position: absolute;
+    border: .3125rem solid white;
+    border-radius: 50%;
+    overflow: hidden;
+    top:  5.4375rem;
+    left: 35%; 
+}
 
+.pcard__mcontent-container {
+    height: 138px;
+    text-align: center;
+    padding: 73px;
+}
 
+.pcard__content-name {
+   font-size: 1.125rem;
+   margin-bottom: 8px; 
+}
 
+#age {
+    color: var(--Dark-gray);
+    font-weight: 400;
+}
 
+.pcard__content-location {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--Darkgrayish-blue);
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.attribution {
-    font-size: 11px;
+.pcard__content-stats-container {
+    border-top: 1px solid var(--Dark-gray-b);
+    width: 100%;
+    height: 87px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 26px 5px 20px;
     text-align: center;
 }
+
+.pcard__flex-stats {
+    font-size: .625rem;
+    color: var(--Dark-gray);
+    line-height: 25px;
+    letter-spacing: 1.3px;
+}
+
+.pcard__flex-amount {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.attribution {
+    font-size: 1.5rem;
+    font-size: 11px;
+    text-align: center;
+    color: antiquewhite;
+    font-weight: 700;
+    margin-top: .9375rem;
+}
 .attribution a {
-    color: hsl(228, 45%, 44%); 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none; 
 }
