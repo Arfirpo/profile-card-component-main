@@ -120,3 +120,21 @@ body {
     color: hsl(228, 45%, 44%);
     text-decoration: none; 
 }
+
+@media  (min-width:90rem) {
+
+    body {
+        background-position: right 48vw bottom 19vh, left 40vw top 50vh;
+    };
+
+    .main-container {
+        width: 90rem;
+        height: 45rem;
+        padding: 0 auto;
+    }
+    .pcard-container {
+        width: 21.875rem;
+        height: 23.625rem;
+        margin: 0 auto;
+    }
+} 
